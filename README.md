@@ -62,7 +62,7 @@ This will create / update two records called `www` and `mail` for `example1.com`
 This example will create / update one record called `www` for `example1.com` with the first API key and one record called `mail` for `example2.de` with the second API key:
 <br>`./recUpdater.out -k L1K2X3?45D6$89G0P -d example1.com www mail cloud -k 4LGH%$RTL5HL3D2B9CO -d example2.de cloud`
 
-<h3>Setting up Service</h3>
+<h3>Start at boot</h3>
 
 In order to automatically run the program after every system start, you have to create a service file.
 To do so type `sudo nano /etc/systemd/system/recUpdater.service` and paste the following:
@@ -82,7 +82,7 @@ ExecStart=/path/to/executable/recUpdater.out -k 3544558468576543 -d example.com 
 WantedBy=multi-user.target
 ```
 
-Replace the statement after `ExecStart =` with the path to the executable file, followed by all further information, as already explained above.
+Replace the statement after `ExecStart =` with the path to the executable file, followed by all further details, as already mentioned above.
 Save and exit. To activate the service type `sudo service enable recUpdater.service`.
 
 <h2>Configuration</h2>
