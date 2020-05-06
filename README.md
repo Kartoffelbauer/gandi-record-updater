@@ -67,9 +67,20 @@ This example will create / update one record called `www` for `example1.com` wit
 In order to automatically run the program after every system start, you have to create a service file.
 To do so type `sudo nano /etc/systemd/system/recUpdater.service` and paste the following:
 
-[Description]
-
+```
 [Unit]
+Description=Record updater for gandi.net
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=120
+ExecStart=/opt/recUpdater/recUpdater.out -k 2PdOCNLNMopsUAJN2WekkJUv -d aaronsoft.de www cloud mail admin -k JT1VJVGGswkA4mMwpBa8fCsL  -d ottheo.de www mail admin
+
+[Install]
+WantedBy=multi-user.target
+```
 
 Replace the statement after `ExecStart =` with the path to the executable file, followed by all further information, as already explained above.
 Save and exit. To activate the service type `sudo service enable recUpdater.service`.
