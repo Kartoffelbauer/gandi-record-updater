@@ -27,7 +27,7 @@ In order to access the zone files, the program needs to know the API key. To get
 
 <h2>Installation</h2>
 
-Download the `recUpdater.cpp` file from here as [zip](https://github.com/Kartoffelbauer/gandi-record-updater/releases/download/v1.0/recUpdater.zip)zip/[tar.gz](https://github.com/Kartoffelbauer/gandi-record-updater/releases/download/v1.0/recUpdater.tar.gz)tar.gz and extract it.
+Download the `recUpdater.cpp` file from here as [zip](https://github.com/Kartoffelbauer/gandi-record-updater/releases/download/v1.0/recUpdater.zip)/[tar.gz](https://github.com/Kartoffelbauer/gandi-record-updater/releases/download/v1.0/recUpdater.tar.gz) and extract it.
 
 <h3>[Optional] Compiling</h3>
 
