@@ -37,8 +37,6 @@ If you don't want to or can't use the precompiled version (e.g. diffrent archite
 
 <h3>Cleaning up</h3>
 Its not required but I recommended to put the compiled file (`recUpdater.out`) in a subdirectory, such as `/opt/recUpdater/` so that everything is nice and clean.
-Now go ahead and run the `recUpdater.out` file for the first time, so the config file gets created. To do so see next section.
-
 
 <h2>Execution</h2>
 
@@ -86,4 +84,7 @@ Replace the statement after `ExecStart =` with the path to the executable file, 
 Save and exit. To activate the service type `sudo service enable recUpdater.service`.
 
 <h2>Configuration</h2>
+
+
+Before you can configure anything, you must have successfully started the program at least once so that the configuration file was created. To do so see 'Execution' section.
 You can find the configuration file at `/etc/recUpdater/recUpdater.conf`. All settings in this file are self-explanatory.
