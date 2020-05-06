@@ -76,7 +76,7 @@ After=network.target
 Type=simple
 Restart=on-failure
 RestartSec=120
-ExecStart=/opt/recUpdater/recUpdater.out -k 2PdOCNLNMopsUAJN2WekkJUv -d aaronsoft.de www cloud mail admin -k JT1VJVGGswkA4mMwpBa8fCsL  -d ottheo.de www mail admin
+ExecStart=/path/to/executable/recUpdater.out -k 3544558468576543 -d example.com www cloud mail
 
 [Install]
 WantedBy=multi-user.target
