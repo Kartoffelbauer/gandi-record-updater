@@ -1,6 +1,6 @@
 <h2>gandi-record-updater</h2>
 
-A simple zone file updater algorithm for the <a href="https://www.gandi.net/en">Gandi</a> LiveDNS API.
+A efficient zone file updater algorithm for the <a href="https://www.gandi.net/en">Gandi</a> LiveDNS API.
 The program is able to update the zone files of multiple domains (and there subdomains) by passing all required informationen over the command line.
 
 
