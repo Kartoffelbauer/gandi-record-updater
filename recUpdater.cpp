@@ -121,7 +121,7 @@ int main(int argc, char* argv[])
 	// Print program infos
 	printf("[ARM] RecUpdater v.%.2f (Build %i)\n", VERSION, BUILD);
 
-	// Try to setupt verything
+	// Try to setupt everything
 	if (!setup(&sConfigContents, &lstRecords, argc, argv, &cLogFile))
 	{
 		// Print to terminal
@@ -543,7 +543,7 @@ bool updateRecord(SDomRecords *psDomRecords, SConfigContents sConfigContents, st
 		if (strResult.find(sConfigContents.strSuccessMsg) == std::string::npos)
 		{
 			// Assign error message if required
-			if ((pstrErrorMsg != NULL) && ((iMsgStartPos = strResult.find("\"message\":m ")) != std::string::npos) && (strResult.length() >= (iMsgStartPos + 12)) && ((iMsgEndPos = strResult.find("\"", (iMsgStartPos + 12))) != std::string::npos))
+			if ((pstrErrorMsg != NULL) && ((iMsgStartPos = strResult.find("\"message\":")) != std::string::npos) && (strResult.length() >= (iMsgStartPos + 12)) && ((iMsgEndPos = strResult.find("\"", (iMsgStartPos + 12))) != std::string::npos))
 				*pstrErrorMsg = strResult.substr((iMsgStartPos + 12), (iMsgEndPos - (iMsgStartPos + 12)));
 			else if (pstrErrorMsg != NULL)
 				*pstrErrorMsg = "Unknown error";
