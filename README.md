@@ -38,6 +38,12 @@ If you don't want to or can't use the precompiled version (e.g. diffrent archite
 <h3>Cleaning up</h3>
 Its not required but I recommended to put the compiled file (`recUpdater.out`) in a subdirectory, such as `/opt/recUpdater/` so that everything is nice and clean.
 
+Create corresponding directory:
+`sudo mkdir /opt/recUpdater`
+
+Move executable to newly created folder:
+`sudo mv recUpdater.out /opt/recUpdater/`
+
 <h2>Execution</h2>
 
 With the API key ready we can now look at the syntax of the command.
