@@ -11,7 +11,7 @@ If this is the case, it will automatically update the corresponding subdomains o
 The program then goes back to sleep for a configurable amount of time to unload the CPU.
 Thanks to highly efficient programming language C++, the program is perfect for low-performance servers such as the raspberry pi.
 
-<h3>What do I need that for?</h3>
+<h3>Goal</h3>
 
 You don't have a static ip address, but you want your homeserver to be permanently accessible.
 
@@ -64,7 +64,7 @@ This will create / update two records called `www` and `mail` for `example1.com`
 <br>`./recUpdater.out -k L1K2X3?45D6$89G0P -d example1.com www mail cloud -d example2.de cloud`
 
 This example will create / update one record called `www` for `example1.com` with the first API key and one record called `mail` for `example2.de` with the second API key:
-<br>`./recUpdater.out -k L1K2X3?45D6$89G0P -d example1.com www mail cloud -k 4LGH%$RTL5HL3D2B9CO -d example2.de cloud`
+<br>`./recUpdater.out -k L1K2X3?45D6$89G0P -d example1.com www -k 4LGH%$RTL5HL3D2B9CO -d example2.de mail`
 
 <h3>Start at boot</h3>
 
