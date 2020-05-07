@@ -61,7 +61,7 @@ The following will create / update three records called `www`, `mail` and `cloud
 <br>`./recUpdater.out -k L1K2X3?45D6$89G0P -d example.com www mail cloud`
 
 This will create / update two records called `www` and `mail` for `example1.com` and one record called `cloud` for `example2.de`:
-<br>`./recUpdater.out -k L1K2X3?45D6$89G0P -d example1.com www mail cloud -d example2.de cloud`
+<br>`./recUpdater.out -k L1K2X3?45D6$89G0P -d example1.com www mail -d example2.de cloud`
 
 This example will create / update one record called `www` for `example1.com` with the first API key and one record called `mail` for `example2.de` with the second API key:
 <br>`./recUpdater.out -k L1K2X3?45D6$89G0P -d example1.com www -k 4LGH%$RTL5HL3D2B9CO -d example2.de mail`
@@ -86,11 +86,11 @@ ExecStart=/path/to/executable/recUpdater.out -k 3544558468576543 -d example.com 
 WantedBy=multi-user.target
 ```
 
-Replace the statement after `ExecStart =` with the path to the executable file, followed by all further details, as already mentioned above.
+Replace the statement after `ExecStart=` with the path to the executable file, followed by all further details, as already mentioned above.
 Save and exit. To activate the service type `sudo service enable recUpdater.service`.
 
 <h2>Configuration</h2>
 
 
-Before you can configure anything, you must have successfully started the program at least once so that the configuration file was created. To do so see 'Execution' section.
+Before you can configure anything, you must have successfully started the program at least once so that the configuration file has been created. To do so see `Execution` section.
 You can find the configuration file at `/etc/recUpdater/recUpdater.conf`. All settings in this file are self-explanatory.
